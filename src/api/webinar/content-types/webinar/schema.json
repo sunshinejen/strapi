@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "webinars",
+  "info": {
+    "singularName": "webinar",
+    "pluralName": "webinars",
+    "displayName": "Webinar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "webinar_title": {
+      "type": "string",
+      "required": true
+    },
+    "webinar_description": {
+      "type": "text",
+      "required": true
+    },
+    "webinar_url": {
+      "type": "string",
+      "required": true
+    },
+    "registration_url": {
+      "type": "string",
+      "required": true
+    },
+    "flyer_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "time"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "webinars"
+    },
+    "key_takeaways": {
+      "type": "richtext"
+    },
+    "moderator_names": {
+      "type": "richtext"
+    },
+    "panelist_names": {
+      "type": "richtext"
+    },
+    "webinar_type": {
+      "type": "enumeration",
+      "enum": [
+        "webinars",
+        "young_professionals"
+      ],
+      "webinars": "webinar",
+      "young_professionals": "young_professionals", 
+      "required": false
+    }
+  }
+}

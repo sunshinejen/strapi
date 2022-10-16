@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_team_teams",
+  "info": {
+    "displayName": "team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Team": {
+      "type": "enumeration",
+      "enum": [
+        "Call for Action - Technology Platform",
+        "Call for Action - Legislation",
+        "Digital Marketing",
+        "Event Management",
+        "Podcast",
+        "Strategy",
+        "Tech Solution - Web Development",
+        "Tech Solution - Mobile App Development",
+        "Tech for Young Professionals",
+        "Volunteer Support",
+        "Webinar"
+      ],
+      "required": true
+    }
+  }
+}

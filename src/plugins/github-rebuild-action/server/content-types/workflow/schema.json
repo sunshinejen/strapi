@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workflows",
+  "info": {
+    "singularName": "workflow",
+    "pluralName": "workflows",
+    "displayName": "Workflows"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "comment": ""
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "configurable": false
+    },
+    "github_host": {
+      "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "repo_owner": {
+      "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "repo_name": {
+      "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "pat": {
+      "type": "string",
+      "configurable": false
+    },
+    "event_type": {
+      "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "client_payload": {
+      "type": "json",
+      "required": false,
+      "configurable": false
+    }
+  }
+}

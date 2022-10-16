@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_phases_phases",
+  "info": {
+    "displayName": "Phase Stage",
+    "icon": "list-ol",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "phase_number": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "phase_title": {
+      "type": "string",
+      "required": true
+    },
+    "phase_dates": {
+      "type": "text",
+      "required": false
+    },
+    "phase_details": {
+      "type": "richtext"
+    }
+  }
+}

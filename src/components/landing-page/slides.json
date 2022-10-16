@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_lading_page_slides",
+  "info": {
+    "displayName": "Containers",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "container_title": {
+      "type": "string",
+      "required": true
+    },
+    "container_subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "container_content": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

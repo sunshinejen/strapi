@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event_title": {
+      "type": "string",
+      "required": true
+    },
+    "event_type": {
+      "type": "enumeration",
+      "enum": [
+        "Speaking Series",
+        "Networking Nights ",
+        "Emerging Founders Breakfast"
+      ],
+      "required": true
+    },
+    "date": {
+      "required": true,
+      "type": "date"
+    },
+    "time": {
+      "type": "time",
+      "required": true
+    },
+    "event_description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

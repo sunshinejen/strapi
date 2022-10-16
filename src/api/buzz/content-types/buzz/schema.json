@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buzzes",
+  "info": {
+    "singularName": "buzz",
+    "pluralName": "buzzes",
+    "displayName": "Buzz",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "speakers",
+        "participants",
+        "volunteers"
+      ]
+    },
+    "review": {
+      "type": "richtext"
+    },
+    "name": {
+      "type": "string"
+    },
+    "team": {
+      "type": "component",
+      "repeatable": false,
+      "component": "team.team"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

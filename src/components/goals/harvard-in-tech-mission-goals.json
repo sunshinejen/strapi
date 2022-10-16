@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_goals_harvard_in_tech_mission_goals",
+  "info": {
+    "displayName": "Harvard in Tech Mission Goals"
+  },
+  "options": {},
+  "attributes": {
+    "goal_name": {
+      "type": "string",
+      "required": true
+    },
+    "goal_description": {
+      "type": "string"
+    }
+  }
+}

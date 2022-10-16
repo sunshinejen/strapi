@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "upcoming_webinars",
+  "info": {
+    "singularName": "upcoming-webinar",
+    "pluralName": "upcoming-webinars",
+    "displayName": "Upcoming Webinar ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "upcoming_webinar_title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "string"
+    },
+    "upcomingWebinar_type": {
+      "type": "enumeration",
+      "enum": [
+        "webinar",
+        "young_professionals"
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcasts",
+  "info": {
+    "singularName": "podcast",
+    "pluralName": "podcasts",
+    "displayName": "Podcast",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "podcast_episode": {
+      "type": "string",
+      "required": false,
+      "default": "Episode Number"
+    },
+    "podcast_description": {
+      "type": "text",
+      "required": true
+    },
+    "flyer_img": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "guest_name": {
+      "type": "string",
+      "required": true
+    },
+    "guest_title": {
+      "type": "string",
+      "required": false
+    },
+    "guest_company": {
+      "type": "string",
+      "required": false
+    },
+    "spotify_url": {
+      "type": "string",
+      "required": true
+    },
+    "soundcloud_url": {
+      "type": "string",
+      "required": true
+    },
+    "applepodcast_url": {
+      "type": "string",
+      "required": true
+    },
+    "host_name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "kind": "singleType",
+  "collectionName": "call_for_action_pages",
+  "info": {
+    "singularName": "call-for-action-page",
+    "pluralName": "call-for-action-pages",
+    "displayName": "Call for Action Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "call_for_action_description": {
+      "type": "text"
+    },
+    "call_for_action_goals": {
+      "type": "component",
+      "repeatable": true,
+      "component": "goals.harvard-in-tech-mission-goals"
+    },
+    "call_for_action_disinformation_title": {
+      "type": "string"
+    },
+    "call_for_action_disinformation_description": {
+      "type": "string"
+    },
+    "call_for_action_disinformation_image_1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "call_for_action_disinformation_image_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "call_for_action_disinformation_image_3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "call_for_action_roadmap_title": {
+      "type": "string"
+    },
+    "call_for_action_roadmap_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "call_for_action_phases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "phase.phases"
+    }
+  }
+}

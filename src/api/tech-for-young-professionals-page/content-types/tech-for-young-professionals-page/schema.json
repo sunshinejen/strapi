@@ -1,0 +1,72 @@
+{
+  "kind": "singleType",
+  "collectionName": "tech_for_young_professionals_pages",
+  "info": {
+    "singularName": "tech-for-young-professionals-page",
+    "pluralName": "tech-for-young-professionals-pages",
+    "displayName": "Tech for Young Professionals Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tech_for_young_professionals_title": {
+      "type": "string"
+    },
+    "tech_for_young_professionals_description": {
+      "type": "text"
+    },
+    "tech_for_young_professionals_mission_goals": {
+      "type": "component",
+      "repeatable": true,
+      "component": "goals.harvard-in-tech-mission-goals"
+    },
+    "tech_for_young_professionals_roadmap_title": {
+      "type": "string"
+    },
+    "tech_for_young_professionals_roadmap_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tech_for_young_professionals_phases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "phase.phases"
+    },
+    "tech_for_young_professionals_careers_title": {
+      "type": "string"
+    },
+    "tech_for_young_professionals_stake_title": {
+      "type": "string",
+      "required": true
+    },
+    "tech_for_young_professionals_stake_description": {
+      "type": "text",
+      "required": true
+    },
+    "tech_for_young_professionals_stake_img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tech_for_young_professionals_source_url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
